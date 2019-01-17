@@ -1,0 +1,338 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: rgb(0, 0, 0);
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+}
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7)), url(../images/bg2.jpg);
+    background-attachment: fixed;
+    background-size: 100% 50rem;
+    height: 40rem;
+}
+
+.navbar {
+    background: url(../images/bg4.jpeg);
+    background-size: 100% 100%;
+}
+
+.navbar ul {
+    height: 22.7rem;
+    width: 20rem;
+    padding: 0;
+    margin-left: -20rem;
+    transition: margin-left 0.5s ease-out;
+    position: fixed;
+    margin-top: 8rem;
+    border-right: 1rem solid rgb(255, 255, 255);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navbar ul:hover {
+    margin-left: 0;
+    transition: margin-left 0.5s ease-out, border-right 0.5s ease-out;
+    border-right: 1rem solid rgba(255, 255, 255, 0);
+}
+
+.navbar li {
+    background: rgb(0, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    padding: 2rem 2rem 2rem 1rem;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.472);
+    margin-left: -15.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navbar li:hover {
+    background: rgb(41, 41, 41);
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.431);
+}
+
+/* LIST SLIDE IN ANIMATION */
+
+.list:hover #home {
+    animation: slide-in 0.2s ease forwards;
+} 
+
+.list:hover #about {
+    animation: slide-in 0.2s ease forwards 0.2s;
+} 
+
+.list:hover #portfolio {
+    animation: slide-in 0.2s ease forwards 0.5s;
+} 
+
+.list:hover #contact {
+    animation: slide-in 0.2s ease forwards 0.7s;
+} 
+
+@keyframes slide-in {
+    from {margin-left: -15.5rem;}
+    to   {margin-left: 0;}
+}
+
+/* END OF LIST SLIDE IN ANIMATION */
+
+i {
+    float: right;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.list:hover i {
+    animation: spin 1s ease forwards;
+}
+
+@keyframes spin {
+    from {transform: rotateZ(0deg);}
+    to   {transform: rotateZ(360deg);}
+}
+
+.heading {
+    text-align: center;
+    text-shadow: 8px 8px 3px rgb(0, 0, 0),
+                 0 0 4px rgb(255, 255, 255);
+    margin-top: 16rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.6rem;
+    font-size: 2rem;
+}
+
+#info {
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 2rem 6rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    padding: 0;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    grid-column: 1/5;
+}
+
+.title h1 {
+    margin-left: 5rem;
+}
+
+.size h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.box-1 {
+    height: 15rem;
+    grid-column: 2/5;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-left: 2px solid rgba(255, 0, 0, 0.527);
+    border-right: 2px solid rgba(255, 0, 0, 0.493);
+    background: rgba(0, 0, 0, 0.623);
+    border-radius: 1rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    from {border-left: 2px solid rgba(0, 17, 255, 0.527);}
+    to   {border-right: 2px solid rgba(162, 0, 255, 0.493);}
+}
+
+.box-2 {
+    padding: 0 2rem 0 1rem;
+}
+
+.box-2 img {
+    width: 18rem;
+    height: 29rem;
+    border-radius: 1rem;
+    border: 0.5px solid rgb(255, 255, 255);
+    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.792);
+}
+
+#edu {
+    padding: 0 2rem 6rem 2rem;
+    color: rgb(255, 255, 255);
+    word-spacing: 0.2rem;
+    font-size: 1.2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7)), url(../images/bg1.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Dosis', sans-serif;
+}
+
+#edu h2 {
+    background: rgba(0, 0, 0, 0.792);
+    padding: 1rem;
+    width: 19rem;
+    border-radius: 1rem;
+    border: 0.5px solid rgb(255, 255, 255);
+    margin-bottom: 6rem;
+}
+
+#edu p {
+    margin-bottom: 2rem;
+}
+
+.card-1 {
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.card-2 {
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.card-2 img {
+    width: 40rem;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.to-top-button ul {
+    list-style: none;
+    background: linear-gradient(rgb(207, 207, 207, 0.2), rgba(0, 0, 0));
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+.to-top-button ul:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.586);
+}
+
+.to-top-button {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    line-height: 10px;
+}
+
+.to-top-button li {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 0.2rem 0.2rem;
+    opacity: 0;
+}
+
+.to-top-button a {
+    border-radius: 2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+.arrow-1 {
+    animation: pulsating 2s infinite 1s;
+}
+
+.arrow-2 {
+    animation: pulsating 2s infinite 0.5s;
+}
+
+.arrow-3 {
+    animation: pulsating 2s infinite;
+}
+
+@keyframes pulsating {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+/* End of back to top button styles */
+
+
+/* MEDIA QUERIES FOR SMALLER DEVICES */
+@media only screen and (max-width: 700px) {
+    
+    .navbar ul {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar a {
+        font-size: 2rem;
+    }
+
+    .heading {
+        text-align: center;
+        padding-top: 14rem;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    #info {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box-1 {
+        grid-column: 1;
+        font-size: 1.5rem;
+    }
+
+    .box-2 {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    
+    .box-2 > :nth-last-child(odd){
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .box-2 img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.792);
+    }
+
+    #header {
+        background-attachment: fixed;
+        background-size: 100% 35rem;
+        height: 30rem;
+    }
+
+    #qualification {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: rgb(0, 0, 0);
+        background: linear-gradient(rgba(0, 0, 0, 0.465) 30%, rgba(0, 0, 0, 0.616)),url(../images/1.jpg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+}
+
