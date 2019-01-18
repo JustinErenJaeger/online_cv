@@ -31,7 +31,7 @@ body {
     width: 20rem;
     padding: 2rem 0;
     margin-left: -20rem;
-    transition: margin-left 0.5s ease-out;
+    transition: margin-left 0.5s ease-out, border-right 0.5s ease-out, border-bottom-right-radius 0.5s ease-out, border-top-right-radius 0.5s ease-out;
     position: fixed;
     margin-top: 8rem;
     border-right: 2rem solid rgb(255, 255, 255);
@@ -364,7 +364,7 @@ body {
         height: 26rem;
         width: 40rem;
         padding: 0;
-        margin: -26rem 10rem 0 18rem;
+        margin: -26rem 1rem 0 18rem;
         transition: margin-top 0.5s ease-out, border-bottom 0.5s ease-out;
         position: fixed;
         border-right: none;
@@ -563,6 +563,14 @@ body {
 
 /* AT MEDIA FOR MOBILE */
 @media only screen and (max-width: 500px) {
+
+    .navbar ul {
+        margin: -26rem 11rem 0 19rem;
+    }
+    
+    .navbar ul:hover {
+        margin: 0 11rem 0 19rem;
+    }
     #edu {
         font-size: 2.8rem;
         letter-spacing: 0.2rem;
@@ -622,7 +630,7 @@ body {
     }
 
     .social {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #contacts {
