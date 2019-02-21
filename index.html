@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Justin Creighton</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fontawesome.com/icons/github?style=brands">
@@ -15,14 +15,21 @@
     <!-- START OF WRAPPER -->
     <div class="wrapper">
         <!-- START OF HEADER -->
-        <div id="header">
+        <header id="top">
             <!-- START OF NAVBAR -->
-            <nav class="navbar">
-                <ul class="list">
-                    <li id="home"><a href="#info">about</a><i class="fas fa-home"></i></li>
-                    <li id="about"><a href="#edu">education</a><i class="fab fa-atlassian"></i></li>
-                    <li id="portfolios"><a href="#portfolio">portfolio</a><i class="fab fa-monero"></i></li>
-                    <li id="contact"><a href="#contacts">contact</a><i class="far fa-envelope"></i></li>
+
+            <div class="btn-toggle-nav" onclick="sidebar()">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <span onclick="sidebar()">X</span>
+                    <li><a href="#info" onclick="sidebar()">about</a></li>
+                    <li><a href="#edu" onclick="sidebar()">education</a></li>
+                    <li><a href="#portfolio" onclick="sidebar()">portfolio</a></li>
+                    <li><a href="#contacts" onclick="sidebar()">contact</a></li>
                 </ul>
             </nav>
             <!-- END OF NAVBAR -->
@@ -30,19 +37,17 @@
                 <h1>Justin Creighton</h1>
                 <h3>Junior Web Developer</h3>
             </div>
-        </div>
+        </header>
         <!-- END OF HEADER -->
 
         <!-- PERSONAL INFORMATION SECTION-->
         <section id="info">
-            <div class="title size">
+            <div class="title-1">
                 <h1>About Me</h1>
             </div>
+            <div class="box-1"></div>  
             <div class="box-2">
-                <img src="images/me-guitar.jpg" alt="">
-            </div>  
-            <div class="box-1">
-            <h1>Who <u>Am</u> I</h1>
+            <h2>Who <u>Am</u> I</h2>
                 <p>
                     My Name is Justin Creighton. Born and raised in Mitchells Plain. I am a hardworking individual that believes that with hard work comes great rewards, because the amount of effort that you put in is the amount that you will get out. I am the kind of person who enjoys challenges eventhough they can get stressful and frustrating at times. 
                 </p>
@@ -52,40 +57,51 @@
         
         <!-- EDUCATIONAL INFORMATION -->
         <div id="edu">
-            <div class="title">
+            <div class="title-2">
                 <h1>Educational Information</h1>
             </div> 
             <div class="card-1">
                 <h2>Secondary Education</h2>
-                    <h3>School</h3>
-                        <p>Matriculated 2015: Princeton Secondary High School-Western Cape/Mitchells'Plain-National Senior Certificate</p>
-                    <h3>Subjects</h3>
+                <div class="logo-1">
+                    <img src="images/princeton.jpg" alt="">
+                </div>
+                <h3>School</h3>
+                <p>Matriculated 2015: Princeton Secondary High School-Western Cape/Mitchells'Plain-National Senior Certificate</p>
+                <h3>Subjects</h3>
                 <p>English, Mathematics, Afrikaans, Life Orientation, Civil Technology, EGD (Engineering Graphics and Design), Physical Science</p>
             </div>
             <div class="card-2">
                 <h2>Tertiary Education</h2>
-                    <h3>Institution</h3>
-                        <p>Completed : Salelesians Life Choices/Lansdowne-Full Stack Web Developer Certificate</p>
-                            <h3>Duration</h3>
-                                <p>1 Year (6 months Training and 6months Internship</p>
-                            <h3>Skills</h3>
-                        <p>Professional development, Life Skiils</p>
-                    <h3>Languages</h3>
+                <div class="logo-2">
+                    <img src="images/Logo-Life-Choices.jpg" alt="">
+                </div>
+                <h3>Institution</h3>
+                <p>Completed : Salelesians Life Choices/Lansdowne-Full Stack Web Developer Certificate</p>
+                <h3>Duration</h3>
+                <p>1 Year (6 months Training and 6months Internship</p>
+                <h3>Skills</h3>
+                <p>Professional development, Life Skiils</p>
+                <h3>Languages</h3>
                 <p>HTML, CSS and Javascript</p>
-                <img src="images/Logo-Life-Choices.jpg" alt="">
             </div>
         </div>
         <!-- END OF EDUCATIONAL INFORMATION -->
 
         <!-- THIS IS THE PORTFOLIO SECTION -->
         <section id="portfolio">
+            <div class="title-3">
                 <h1>Projects</h1>
-            <div class="project">
-                <a href="https://github.com/JustinErenJaeger/tech-site" target="_blank"><img src="images/tech_trends.jpg" alt=""></a>
+            </div>
+            <div class="project-1">
+                <a href="https://github.com/JustinErenJaeger/tech-site" target="_blank">
+                    <img src="images/tech_trends.jpg" alt="">
+                </a>
                 <p>Tech and movie site project</p>
             </div>
-            <div class="project">
-                <a href="https://github.com/JustinErenJaeger/darling_apology" target="_blank"><img src="images/o-apologize-facebook-1507D4C83325B6DF522.jpg" alt=""></a>
+            <div class="project-2">
+                <a href="https://github.com/JustinErenJaeger/darling_apology" target="_blank">
+                    <img src="images/o-apologize-facebook-1507D4C83325B6DF522.jpg" alt="">
+                </a>
                 <p>Apology letter project</p>
             </div>
         </section>
@@ -102,15 +118,12 @@
             <div class="icons">
                 <div class="github">
                     <a href="https://github.com/JustinErenJaeger" target="_blank"><i class="fab fa-github"></i></a>
-                    <p class="test">Github</p>
                 </div>
                 <div class="facebook">
                     <a href="https://www.facebook.com/justin.creighton.39" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <p>Facebook</p>
                 </div>
                 <div class="linked-in">
                     <i class="fab fa-linkedin"></i>
-                    <p>Linked-in</p>
                 </div>
             </div>    
         </footer>
@@ -118,7 +131,7 @@
         
         <!-- START OF BACK TO TOP BUTTON -->
         <span class="to-top-button">
-            <a href="#header">
+            <a href="#top">
                 <ul>
                     <li class="arrow-1">^</li>
                     <li class="arrow-2">^</li>
@@ -129,5 +142,6 @@
         <!-- END OF BACK TO TOP BUTTON -->
     </div>
     <!-- END OF WRAPPER -->
+    <script src="js/main.js"></script>
 </body>
 </html>

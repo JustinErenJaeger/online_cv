@@ -1,0 +1,706 @@
+.btn-toggle-nav {
+  position: fixed;
+  border-radius: 0.3rem;
+  width: 2.5rem;
+  padding: 0.1rem 0.2rem;
+  margin: 0.5rem;
+  top: 0;
+  z-index: 2; }
+
+.btn-toggle-nav p {
+  background: white;
+  padding: 0.15rem;
+  width: 2rem;
+  margin: 0.4rem 0;
+  border-radius: 1rem; }
+
+/* THIS IS THE STYLES FOR THE NAVBAR */
+#navbar {
+  position: fixed;
+  margin-left: -15rem;
+  height: 100%;
+  width: 15rem;
+  background: linear-gradient(-45deg, black, #161616 50%, black);
+  transition: all 0.5s ease-in-out;
+  z-index: 4; }
+
+#navbar.active {
+  margin-left: 0; }
+
+#navbar ul {
+  position: relative;
+  padding: 6rem 0 0 0; }
+
+#navbar ul span {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  cursor: default;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%; }
+
+#navbar ul span:hover {
+  background: white;
+  color: black; }
+
+#navbar ul li {
+  list-style: none; }
+
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 1rem 1rem;
+  transition: all 0.3s ease-in-out; }
+
+#navbar ul li a:hover {
+  background: linear-gradient(-45deg, black, #444444 50%, black);
+  padding-left: 2rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); }
+
+/* THIS IS THE STYLES FOR THE HEADER TEXT */
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 8px 8px 3px black, 0 0 4px black;
+  padding-top: 10rem;
+  color: white;
+  letter-spacing: 0.6rem; }
+
+.logo-1 img {
+  width: auto;
+  height: 10rem; }
+
+.logo-2 img {
+  width: auto;
+  height: 10rem; }
+
+.arrow img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  margin-left: 1rem; }
+
+.arrow img:hover {
+  background: #3d3d3d; }
+
+.icon-1 img {
+  width: 8rem;
+  height: 8rem;
+  padding-right: 1rem; }
+
+.icon-2 img,
+.icon-3 img {
+  width: 6rem;
+  height: 8rem; }
+
+.project-1 img {
+  width: 100%;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out; }
+
+.project-2 img {
+  width: 100%;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out; }
+
+.project-1 img:hover {
+  opacity: 1; }
+
+.project-2 img:hover {
+  opacity: 1; }
+
+/* THIS IS THE STYLES FOR THE CONTACT SECTION */
+.social a {
+  color: white;
+  text-decoration: none; }
+
+.social a:hover {
+  text-decoration: underline; }
+
+.icons {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  font-size: 2rem;
+  margin-right: 2rem; }
+
+.icons i {
+  font-size: 3rem;
+  color: white; }
+
+.icons i:hover {
+  text-shadow: 0 0 10px white; }
+
+/* BACK TO TOP BUTTON STYLES */
+.to-top-button ul {
+  list-style: none;
+  background: linear-gradient(rgba(207, 207, 207, 0.2), black);
+  padding: 0.5rem 0.1rem 0.5rem 0.15rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px black;
+  border: 0.5px solid white; }
+
+.to-top-button ul:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.586); }
+
+.to-top-button {
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+  line-height: 10px; }
+
+.to-top-button li {
+  font-weight: bold;
+  color: white;
+  padding: 0.2rem 0.2rem;
+  opacity: 0; }
+
+.to-top-button a {
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black;
+  opacity: 0; }
+
+.arrow-1 {
+  animation: pulsating 2s infinite 1s; }
+
+.arrow-2 {
+  animation: pulsating 2s infinite 0.5s; }
+
+.arrow-3 {
+  animation: pulsating 2s infinite; }
+
+@keyframes pulsating {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* End of back to top button styles */
+@font-face {
+  font-family: "Poiret One";
+  src: url(../fonts/PoiretOne-Regular.ttf); }
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: black;
+  font-family: "Poiret One";
+  color: white;
+  letter-spacing: 0.1rem; }
+
+/* THIS IS THE WRAPPER FOR THE PAGE */
+.wrapper {
+  width: 100%;
+  overflow: hidden; }
+
+/* THIS IS THE STYLES FOR THE HEADER */
+header {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.4) 50%), url(../images/00b1831e8745c4b543029ab9c073856e.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100vh; }
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: white;
+  padding: 2rem; }
+
+p {
+  font-size: 1.2rem; }
+
+.title-1,
+.title-2,
+.title-3 {
+  font-size: 1.5rem;
+  margin: auto; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+#info {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "title title" "box-1 box-2";
+  padding: 2rem; }
+
+.title-1 {
+  grid-area: title; }
+
+.box-1 {
+  grid-area: box-1;
+  height: 100%;
+  background: url(../images/IMG_20160312_142624_edit.jpg);
+  background-size: 100% 100%; }
+
+.box-2 {
+  padding: 2rem 8rem;
+  grid-area: box-2;
+  height: 20rem; }
+
+#edu {
+  display: grid;
+  padding: 3rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../images/bg1.jpg);
+  background-size: 100% 100%; }
+
+#portfolio {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "title-p title-p" "project-1 project-2"; }
+
+.title-3 {
+  grid-area: title-p; }
+
+.project-1 {
+  grid-area: project-1;
+  padding-right: 1rem;
+  text-align: center; }
+
+.project-2 {
+  grid-area: project-2;
+  padding-left: 1rem;
+  text-align: center; }
+
+@media only screen and (max-width: 1024px) {
+  header {
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.4) 50%), url(../images/00b1831e8745c4b543029ab9c073856e.jpg);
+    background-size: 100% 100%;
+    height: 30rem; }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    padding: 2rem; }
+
+  p {
+    font-size: 1rem; }
+
+  .title-1,
+  .title-3 {
+    font-size: 1.4rem;
+    margin: auto; }
+
+  .title-2 {
+    font-size: 1rem;
+    margin: 0; }
+
+  h2 {
+    font-size: 1.4rem; }
+
+  h3 {
+    font-size: 1.6rem; }
+
+  .btn-toggle-nav {
+    position: fixed;
+    border-radius: 0.3rem;
+    width: 2.5rem;
+    padding: 0.1rem 0.2rem;
+    margin: 0.2rem;
+    top: 0;
+    z-index: 2; }
+
+  .btn-toggle-nav p {
+    background: white;
+    padding: 0.13rem;
+    width: 1.6rem;
+    margin: 0.4rem 0;
+    border-radius: 1rem; }
+
+  /* THIS IS THE STYLES FOR THE NAVBAR */
+  #navbar {
+    margin-left: 0;
+    margin-top: -15rem;
+    height: 15rem;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.924); }
+
+  #navbar.active {
+    margin-top: 0; }
+
+  #navbar ul {
+    position: relative;
+    padding: 0;
+    padding-top: 0rem; }
+
+  #navbar ul span {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: default;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%; }
+
+  #navbar ul span:hover {
+    background: white;
+    color: black; }
+
+  #navbar ul li {
+    list-style: none; }
+
+  #navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out; }
+
+  #navbar ul li a:hover {
+    background: linear-gradient(-45deg, black, #444444 50%, black);
+    padding-left: 0.4rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); }
+
+  /* THIS IS THE STYLES FOR THE HEADER TEXT */
+  .heading {
+    font-size: 2rem;
+    padding-top: 8rem;
+    color: white;
+    letter-spacing: 0.2rem; }
+
+  #info {
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "title title" "box-1 box-2";
+    padding: 2rem; }
+
+  .box-1 {
+    height: 24rem;
+    max-width: 304px; }
+
+  .box-2 {
+    padding: 1rem 4rem;
+    height: 14rem; }
+
+  #edu {
+    line-height: 1.2rem;
+    text-align: center;
+    padding: 0.5rem; }
+
+  .logo-1 img {
+    height: 6rem; }
+
+  .logo-2 img {
+    height: 6rem; }
+
+  /* THIS IS THE STYLES FOR THE CONTACT SECTION */
+  .icons {
+    margin: auto; }
+
+  .github,
+  .facebook,
+  .linked-in {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.2rem 3rem; }
+
+  /* BACK TO TOP BUTTON STYLES */
+  .to-top-button ul {
+    list-style: none;
+    background: linear-gradient(rgba(207, 207, 207, 0.2), black);
+    padding: 0.5rem 0.1rem 0.5rem 0.2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px black;
+    border: 0.5px solid white; }
+
+  .to-top-button ul:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.586); }
+
+  .to-top-button {
+    position: fixed;
+    bottom: 0;
+    right: 0.6rem;
+    line-height: 8px; }
+
+  /* End of back to top button styles */ }
+@media only screen and (max-width: 768px) {
+  header {
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.4) 50%), url(../images/00b1831e8745c4b543029ab9c073856e.jpg);
+    background-size: 100% 100%;
+    height: 30rem; }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    padding: 2rem; }
+
+  p {
+    font-size: 1rem; }
+
+  .title-1,
+  .title-3 {
+    font-size: 1rem;
+    margin: auto; }
+
+  .title-2 {
+    font-size: 1rem;
+    margin: 0; }
+
+  h2 {
+    font-size: 1.4rem; }
+
+  h3 {
+    font-size: 1.6rem; }
+
+  .btn-toggle-nav {
+    position: fixed;
+    border-radius: 0.3rem;
+    width: 2.5rem;
+    padding: 0.1rem 0.2rem;
+    margin: 0.2rem;
+    top: 0;
+    z-index: 2; }
+
+  .btn-toggle-nav p {
+    background: white;
+    padding: 0.13rem;
+    width: 1.6rem;
+    margin: 0.4rem 0;
+    border-radius: 1rem; }
+
+  /* THIS IS THE STYLES FOR THE NAVBAR */
+  #navbar {
+    margin-left: 0;
+    margin-top: -15rem;
+    height: 15rem;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.924); }
+
+  #navbar.active {
+    margin-top: 0; }
+
+  #navbar ul {
+    padding: 0; }
+
+  #navbar ul li a {
+    text-align: center; }
+
+  #navbar ul span {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: default;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%; }
+
+  #navbar ul span:hover {
+    background: white;
+    color: black; }
+
+  #navbar ul li {
+    list-style: none; }
+
+  #navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out; }
+
+  #navbar ul li a:hover {
+    background: linear-gradient(-45deg, black, #444444 50%, black);
+    padding-left: 0.4rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); }
+
+  /* THIS IS THE STYLES FOR THE HEADER TEXT */
+  .heading {
+    font-size: 1.8rem;
+    padding-top: 8rem;
+    color: white;
+    letter-spacing: 0.2rem; }
+
+  #info {
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "title title" "box-1 box-2";
+    padding: 0.5rem; }
+
+  .box-1 {
+    height: 20rem;
+    max-width: 304px; }
+
+  .box-2 {
+    padding: 1rem 0.2rem;
+    height: 14rem; }
+
+  #edu {
+    line-height: 1.2rem;
+    text-align: center;
+    padding: 0.5rem; }
+
+  .logo-1 img {
+    height: 6rem; }
+
+  .logo-2 img {
+    height: 6rem; }
+
+  /* THIS IS THE STYLES FOR THE CONTACT SECTION */
+  .icons {
+    margin: auto; }
+
+  .github,
+  .facebook,
+  .linked-in {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.2rem 2rem; }
+
+  /* BACK TO TOP BUTTON STYLES */
+  .to-top-button ul {
+    list-style: none;
+    background: linear-gradient(rgba(207, 207, 207, 0.2), black);
+    padding: 0.5rem 0.1rem 0.5rem 0.2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px black;
+    border: 0.5px solid white; }
+
+  .to-top-button ul:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.586); }
+
+  .to-top-button {
+    position: fixed;
+    bottom: 0;
+    right: 0.6rem;
+    line-height: 8px; }
+
+  /* End of back to top button styles */ }
+@media only screen and (max-width: 440px) {
+  header {
+    height: 20rem; }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr; }
+
+  p {
+    font-size: 0.8rem; }
+
+  .title-1,
+  .title-3 {
+    font-size: 1rem;
+    margin: auto; }
+
+  .title-2 {
+    font-size: 0.8rem;
+    margin: 0; }
+
+  h2 {
+    font-size: 1.4rem; }
+
+  h3 {
+    font-size: 1.2rem; }
+
+  .btn-toggle-nav {
+    padding: 0.1rem 0.2rem;
+    margin: 0.2rem; }
+
+  .btn-toggle-nav p {
+    padding: 0.13rem;
+    width: 1.6rem;
+    margin: 0.4rem 0; }
+
+  /* THIS IS THE STYLES FOR THE NAVBAR */
+  #navbar {
+    margin-left: 0;
+    margin-top: -15rem;
+    height: 15rem;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.924); }
+
+  #navbar.active {
+    margin-top: 0; }
+
+  #navbar ul {
+    padding: 0; }
+
+  #navbar ul li a {
+    text-align: center; }
+
+  /* THIS IS THE STYLES FOR THE HEADER TEXT */
+  .heading {
+    font-size: 1.2rem;
+    padding-top: 8rem;
+    color: white;
+    letter-spacing: 0.2rem; }
+
+  #info {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "box-1" "box-2";
+    padding: 0.5rem; }
+
+  .box-1 {
+    height: 28rem;
+    max-width: 304px; }
+
+  .box-2 {
+    padding: 1rem 0.2rem;
+    height: 14rem; }
+
+  #edu {
+    line-height: 1.2rem;
+    text-align: center;
+    padding: 0.5rem; }
+
+  .logo-1 img {
+    height: 5rem; }
+
+  .logo-2 img {
+    height: 3rem; }
+
+  /* THIS IS THE STYLES FOR THE CONTACT SECTION */
+  .icons {
+    margin: auto; }
+
+  .github,
+  .facebook,
+  .linked-in {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.2rem 1rem; }
+
+  /* BACK TO TOP BUTTON STYLES */
+  .to-top-button ul {
+    list-style: none;
+    background: linear-gradient(rgba(207, 207, 207, 0.2), black);
+    padding: 0.2rem 0 0.2rem 0.1rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px black;
+    border: 0.5px solid white; }
+
+  .to-top-button ul:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.586); }
+
+  .to-top-button {
+    position: fixed;
+    bottom: 0;
+    right: 0.6rem;
+    line-height: 4px; }
+
+  /* End of back to top button styles */ }
+
+/*# sourceMappingURL=main.css.map */
